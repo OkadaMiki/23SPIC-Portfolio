@@ -1,0 +1,88 @@
+html {
+    font-size: 62.5%;
+}
+html,
+body {
+    min-width: 390px;
+    margin: 0 auto;
+    height: 100%;
+    color: var(--fontcolor);
+    font-family: "Tsukimi Rounded", sans-serif;
+}
+:root{
+    --base-color: #fff;
+    --fontcolor: #4d4d4d;
+    --maincolor: ;
+    --accentColor: ;
+}
+
+/* header */
+header{
+    padding: 4%;
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* nav */
+        ul{
+            display: flex;
+            list-style-type: none;
+            li{
+                margin-left: 64px;
+                font-size: 1.6rem;
+                a:link,
+                a:visited{
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+/* main */
+main{
+    div.works{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 64px;
+        div.worksimgarea{
+            width: 45%;
+            height: auto;
+            margin-right: 5%;
+            div.worksimgbox{
+                width: 100%;
+                margin: 0 auto;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        section.workstextarea{
+            width: 50%;
+            h3{
+                font-size: 2.4rem;
+                margin-bottom: 24px;
+            }
+            p{
+                font-size: 1.7rem;
+                line-height: 3rem;
+            }
+            a:link,
+            a:visited{
+                display: inline-block;
+                padding: 8px 32px;
+                margin: 16px auto 0;
+                color: var(--fontcolor);
+                font-size: 1.5rem;
+                line-height: 1.5rem;
+                text-decoration: none;
+                border: solid 1px var(--fontcolor);
+                border-radius: 32px;
+                box-shadow: 3px 2px rgba(0,0,0,0.2);
+                }
+            a:hover{
+                background: #def9ff;
+            }
+        }
+    }
+}
