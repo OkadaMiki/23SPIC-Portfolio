@@ -23,16 +23,28 @@ header{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        /* nav */
+        h1{
+            a{
+                &:link,
+                &:visited{
+                    text-decoration: none;
+                    color: var(--fontcolor);
+                }
+            }
+        }
         ul{
             display: flex;
             list-style-type: none;
             li{
-                margin-left: 64px;
+                margin-left: 48px;
                 font-size: 1.6rem;
-                a:link,
-                a:visited{
-                    text-decoration: none;
+                font-weight: 500;
+                a{
+                    &:link,
+                    &:visited{
+                        text-decoration: none;
+                        color: var(--fontcolor);
+                    }
                 }
             }
         }
@@ -78,7 +90,7 @@ main{
                 text-decoration: none;
                 border: solid 1px var(--fontcolor);
                 border-radius: 32px;
-                box-shadow: 3px 2px rgba(0,0,0,0.2);
+                box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
                 }
             a:hover{
                 background: #def9ff;
